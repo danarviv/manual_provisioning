@@ -1,0 +1,17 @@
+$ vagrant ssh mc01
+
+Install, start & enable memcache on port 11211
+#yum install epel-release -y
+#yum install memcached -y
+#systemctl start memcached
+#systemctl enable memcached
+#systemctl status memcached
+#memcached -p 11211 -U 11111 -u memcached -d
+
+Starting the firewall and allowing the port 11211 to access memcache
+# systemctl enable firewalld
+# systemctl start firewalld
+# systemctl status firewalld
+# firewall-cmd --add-port=11211/tcp --permanent
+# firewall-cmd --reload
+# memcached -p 11211 -U 11111 -u memcache -d
