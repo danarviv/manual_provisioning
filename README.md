@@ -38,8 +38,3 @@ DB Caching
 Indexing/Search service
 6. MySQL
 SQL Database
-
-
-MYSQL Setup
-
-
