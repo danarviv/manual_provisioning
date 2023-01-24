@@ -1,4 +1,5 @@
 MYSQL Setup
+
 Login to the db vm
 $ vagrant ssh db01
 
